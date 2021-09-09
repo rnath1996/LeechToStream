@@ -2,14 +2,14 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1991731194:AAEpPT7JK1pBoRpqpe-61-N_z3OZt7QP2w4")
+    TG_BOT_TOKEN = 1991731194:AAEpPT7JK1pBoRpqpe-61-N_z3OZt7QP2w4
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", "3447744"))
-    API_HASH = os.environ.get("API_HASH", "6e06f472f9bc2b6d495607bbd8f9b621")
-    OWNER_ID = int(os.environ.get("OWNER_ID", "1930040165"))
+    APP_ID = 3447744
+    API_HASH = 6e06f472f9bc2b6d495607bbd8f9b621
+    OWNER_ID = 1930040165
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001140305679").split())
+    AUTH_CHANNEL = -1001140305679
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
